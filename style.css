@@ -1,38 +1,52 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'montserrat';
+  color: azure;
 }
 
-.graph {
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+#nav{
+  width: 100%;
+  height: 80px;
+  /* background-color: blueviolet; */
+  display: flex;  /* to set the content in verticall position. */
+  align-items: center;  /* to align item vertically in center. */
+  justify-content: flex-start; /* to align item horizontally */
+  padding: 0 150px;
+  gap: 40px; /* To create gap */
+  position: fixed; /* to set the navbar in the particular position. */
+  z-index: 99;
+}
+
+#nav img{
+  height: 75px;
+}
+
+#nav h2{
+  text-transform: uppercase;
+}
+
+
+video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* To fit the Video in the whole screen */
+  position: fixed; /* To fix the video in its position as navbar */
+}
+
+#main{
   position: relative;
+  background-color: rgba(0, 187, 255, 0.11);
+
 }
 
-.vertex {
-  width: 20px;
-  height: 20px;
-  background-color: #3498db;
-  border-radius: 50%;
-  position: absolute;
+#page1{
+  height: 100vh;
+  width: 100%;
 }
-
-#A { top: 50px; left: 100px; }
-#B { top: 150px; left: 200px; }
-#C { top: 250px; left: 100px; }
-#D { top: 150px; left: 0; }
-
-.edge {
-  position: absolute;
-  background-color: #2ecc71;
-}
-
-#edge1 { top: 60px; left: 110px; width: 80px; height: 3px; transform: rotate(45deg); }
-#edge2 { top: 110px; left: 180px; width: 80px; height: 3px; transform: rotate(90deg); }
-#edge3 { top: 210px; left: 180px; width: 80px; height: 3px; transform: rotate(135deg); }
-#edge4 { top: 160px; left: 110px; width: 80px; height: 3px; transform: rotate(180deg); }
-#edge5 { top: 60px; left: 110px; width: 80px; height: 3px; transform: rotate(225deg); }
-#edge6 { top: 110px; left: 20px; width: 80px; height: 3px; transform: rotate(270deg); }
-#edge7 { top: 210px; left: 20px; width: 80px; height: 3px; transform: rotate(315deg); }
-#edge8 { top: 160px; left: 110px; width: 80px; height: 3px; transform: rotate(0deg); }
