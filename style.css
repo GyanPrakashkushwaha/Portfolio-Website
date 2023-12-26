@@ -33,6 +33,24 @@ html,body{
 }
 
 
+#cursor{
+  height: 25px;
+  width: 25px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 99;
+}
+
+#cursor{
+  height: 50px;
+  width: 50px;
+  background-color: rgba(255, 255, 0, 0.679);
+  border-radius: 50%;
+  position: fixed;
+  z-index: 99;
+}
+
 video{
   height: 100%;
   width: 100%;
@@ -44,7 +62,6 @@ video{
 #main{
   position: relative;
   background-color: rgba(1, 8, 11, 0.19);
-
 }
 
 #page1{
