@@ -29,8 +29,16 @@ body::-webkit-scrollbar{
   justify-content: space-between;
   align-items: center;
 }
+#logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-.navbar h1{
+#logo img{
+  height: 60px;
+}
+#logo h1{
   font-size: 20px;
   font-weight: lighter;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -51,7 +59,6 @@ body::-webkit-scrollbar{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   position: relative;
 }
-
 
 
 .navbar a::after {
@@ -173,8 +180,6 @@ body::-webkit-scrollbar{
 
 
 #aboutme {
-  height: 100vh;
-  width: 100%;
   /* background-color: red; */
   white-space: nowrap;
   overflow-x: auto;
@@ -223,4 +228,30 @@ body::-webkit-scrollbar{
   }
 }
 
+#info {
+  display: flex;
+  height: 60vh;
+  width: 90%;
+  margin: 90px 60px;
+  gap: 60px;
+  align-items: center;
+  background-color: #3112af46; /* Light gray background */
+  padding: 20px; /* Add padding for better spacing */
+  border-radius: 30px;
+}
 
+#info video{
+  border-radius: 30px;
+  height: 400px;
+}
+
+#text{
+  gap: 30px;  
+  align-items: center;
+  
+}
+#text p{
+  white-space: normal;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
