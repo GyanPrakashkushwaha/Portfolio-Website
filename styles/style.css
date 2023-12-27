@@ -58,24 +58,153 @@ html,body{
   width: 100%;
 }
 
+/* #home{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+} */
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: 0.4s; /* for light mode animation */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 #nav {
+  backdrop-filter: blur(10px);
+  height: 7vh;
   position: fixed;
   display: flex;
-  bottom: 1rem;
-  background-color: hsla(var(--second-hue), 32%, 16%, 0.8);
-  width: 90%;
-  border-radius: 20px;
-  padding: 10px 5px;
-  justify-content: center;
-  
-
+  bottom: 0.5rem;
+  background-color: hsla(var(--second-hue), 32%, 16%, 0.9);
+  width: 20%;
+  margin: 1% 40%;
+  border-radius:60px;
+  justify-content: space-around;
+  backdrop-filter: blur(10px);
+  align-items: center;
+  z-index: 100; /* or any higher value based on your design */
 
 }
 
-#nav a {
+#nav i{
+  font-size: 1.5rem;
+  /* font-weight: 300; */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: white;
-  margin: 0 15px;
-  text-decoration: none;
 }
 
 
+#main{
+  height: 40vh;
+  width: 90%;
+  padding: 40px;
+  position: relative;
+}
+
+#logo{
+  display: flex;
+  align-items: center;
+  justify-content: top;
+}
+
+#logo img{
+  height: 30px;
+  width: 30px;
+}
+
+#name{
+  font-size: 20px;
+  font-weight: 800;
+}
+
+@keyframes fadeInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#intro img {
+  height: 300px;
+  width: 800px;
+  border-radius: 60px;
+  animation: fadeInFromLeft 1s ease-out; /* Apply the animation */
+}
+
+#intro {
+  height: 60vh;
+  width: 10%;
+  display: flex;
+  margin: 100px 200px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 100px;
+  flex-wrap: nowrap;
+}
+
+#text h2 {
+  font-size: 60px;
+  color: rgb(137, 237, 38);
+  animation: fadeInFromRight 1s ease-out; /* Apply the animation */
+}
+
+#text h4 {
+  font-size: 30px;
+  white-space: nowrap;
+  color: rgb(235, 250, 253);
+  animation: fadeInFromRight 1s ease-out; /* Apply the animation */
+}
+
+
+#education{
+  display: flex;
+  height: 80vh;
+  width: 90%;
+  margin: 100px 200px;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 100px;
+  z-index: 7;
+  position: relative;
+}
+
+#education::after{
+  transform: rotate(90deg) translate(16px, 4px);
+}
+
+#education img{
+  border-radius: 50px;
+  height: 400px;
+  width: 500px;
+  animation: fadeInFromLeft 1s ease-out; /* Apply the animation */
+}
+
+#education p{
+  font-size: 30px;
+  white-space: nowrap;
+  font-weight: bolder;
+  color: rgb(29, 226, 108);
+  animation: fadeInFromRight 1s ease-out; /* Apply the animation */
+
+
+}
