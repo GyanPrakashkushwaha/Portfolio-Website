@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: auto;
+  width: 100%;
+  position: relative;
+  background-color: #e5dbbc;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+
+::selection{
+  background-color: rgba(66, 65, 64, 0.342);
+}
+
+.navbar{
+  display: flex;
+  height: 70px;
+  width: 100%;
+  padding: 0 10vw;
+  background-color: rgb(174, 174, 169);
+  justify-content: space-between;
+  align-items: center;
+}
+#logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo img{
+  height: 40px;
+}
+#logo h1{
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.navbar a{
+  color: rgb(50, 15, 15);
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 800;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: relative;
+}
+
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #1bca08;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+#cards-container {
+  /* background-color: red; */
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  position: relative;
+  z-index: 10;
+}
+
+#card1 {
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+  }

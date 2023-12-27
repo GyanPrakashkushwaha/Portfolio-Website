@@ -36,9 +36,9 @@ body::-webkit-scrollbar{
 }
 
 #logo img{
-  height: 60px;
+  height: 40px;
 }
-#logo h1{
+.home a{
   font-size: 20px;
   font-weight: lighter;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
