@@ -124,10 +124,14 @@ body::-webkit-scrollbar{
   margin-bottom: 20px;
   font-weight: 800;
 }
+
+
 .overlay p {
   color: #000;
   font-size: 18px;
 }
+
+
 .card:hover .overlay {
   opacity: 1;
 }
