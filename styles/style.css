@@ -248,8 +248,8 @@ body::-webkit-scrollbar{
 #text{
   gap: 30px;  
   align-items: center;
-  
 }
+
 #text p{
   white-space: normal;
   font-size: 20px;
