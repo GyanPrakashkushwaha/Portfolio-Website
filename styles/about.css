@@ -1,0 +1,118 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: auto;
+  width: 100%;
+  position: relative;
+  background-color: #e5dbbc;
+}
+
+
+::selection{
+  background-color: rgba(66, 65, 64, 0.342);
+}
+
+.navbar{
+  position: fixed;
+  display: flex;
+  height: 10vh;
+  width: 100%;
+  padding: 0 4vw;
+  /* background-color: rgb(174, 174, 169); */
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+#logo{
+  border-radius: 20px;
+  height: 70%;
+  width: 25%;
+  background-color: #6c7675;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo:hover {
+  transition: transform 0.2s ease-in-out 0.1s;
+}
+
+#logo img{
+  height: 40px;
+  object-fit: cover;
+}
+
+#logo a{
+  color: #e5dbbc;
+  /* height: 40px; */
+  /* background-color: #1bca08; */
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 800;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#logo:nth-child(odd):hover {
+  transform: translateX(15px) rotate(15deg) translateY(10px) perspective(1000px);
+}
+
+#logo:nth-child(even):hover {
+  transform: translateX(25px) rotate(25deg) translateY(15px) perspective(1200px);
+}
+
+
+.home a{
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.navbar a{
+  color: rgb(50, 15, 15);
+  font-size: 20px;
+  text-decoration: none;
+  /* font-weight: 800; */
+  font-family:'Courier New', Courier, monospace;
+  position: relative;
+}
+
+
+#nav-link a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #082805;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+#nav-link a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+.about-video video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    /* position: fixed; */
+}

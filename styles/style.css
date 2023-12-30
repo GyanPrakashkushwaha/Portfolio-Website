@@ -23,7 +23,7 @@ body::-webkit-scrollbar{
 .navbar{
   position: fixed;
   display: flex;
-  height: 15%;
+  height: 10%;
   width: 100%;
   padding: 0 4vw;
   /* background-color: rgb(174, 174, 169); */
@@ -33,7 +33,7 @@ body::-webkit-scrollbar{
 }
 
 #logo{
-  border-radius: 50px;
+  border-radius: 20px;
   height: 70%;
   width: 25%;
   background-color: #6c7675;
@@ -48,6 +48,7 @@ body::-webkit-scrollbar{
 
 #logo img{
   height: 40px;
+  object-fit: cover;
 }
 
 #logo a{
