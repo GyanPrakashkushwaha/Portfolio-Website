@@ -146,17 +146,25 @@ body{
 }
 
 
-.about-video video{
+/* .about-video video{
     height: 100%;
     width: 100%;
     object-fit: cover;
     z-index: -1;
     position: fixed;
+} */
+
+.about-video img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  position: fixed;
 }
 
 
 .skills-section{
-    margin-top: 100px;
+    margin-top: 40px;
     width: 100%;
     height: 100vh;
     /* background-color: red; */
@@ -173,42 +181,61 @@ body{
 }
 
 
-.card{
-    position: relative;
-    border-radius: 60px;
-    height: 70%;
-    width: 30%;
-    background-color: black;
-}
-
-.skills-col-card1 h4 {
-  height: 100%;
-  width: 100%;
-  background-color: #95c11e;
-  padding: 30px;
-  color: red;
-  /* padding-top: 160px; */
-  /* opacity: 0; */
-}
-
-#skills-col-card1 img{
+#skills-col-card1 img,
+#skills-col-card2 img,
+#skills-col-card3 img {
   position: absolute;
   border-radius: 60px;
   height: 100%;
   max-width: 100%;
+  object-fit: cover; /* Ensure images cover the entire container */
+  z-index: 1;
 }
 
-#skills-col-card2 img{
-  position: absolute;
-  border-radius: 60px;
-  height: 100%;
-  max-width: 100%;
-}
-
-#skills-col-card3 img{
-  position: absolute;
-  border-radius: 60px;
+.card-text1 h2{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 40px;
+  padding: 10px;
+  position: relative;
   height: 100%;
   width: 100%;
+  /* padding: 30px; */
+  color: rgb(61, 201, 37);
+  text-align: center; /* Center the text */
+  z-index: 2;
 }
 
+.card {
+  position: relative;
+  border-radius: 60px;
+  height: 70%;
+  width: 30%;
+  /* background-color: black; */
+  overflow: hidden; /* Ensure content doesn't overflow */
+  transition: all ease 0.6s;
+}
+
+
+
+.card-text1 p,
+.card-text p{
+  padding: 20px;
+  font-size: 20px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  color: #c8e3df;
+  z-index: 2;
+  opacity: 0;
+  transition: all ease 0.6s;
+  background-color: #23871a67;
+
+}
+
+.card:hover p{
+  opacity: 1;
+}
+
+.card:hover{
+  transform: translateY(2em) translateX(1em);
+}
