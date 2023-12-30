@@ -30,9 +30,17 @@ body::-webkit-scrollbar{
   align-items: center;
 }
 #logo{
+  border-radius: 50px;
+  height: 70%;
+  width: 25%;
+  background-color: #292c23;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#logo:hover {
+  transition: transform 0.2s ease-in-out 0.1s;
 }
 
 #logo img{
@@ -40,10 +48,23 @@ body::-webkit-scrollbar{
 }
 
 #logo a{
+  color: #e5dbbc;
   /* height: 40px; */
+  /* background-color: #1bca08; */
+  border-radius: 50px;
   text-decoration: none;
+  font-weight: 800;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+#logo:nth-child(odd):hover {
+  transform: translateX(15px) rotate(15deg) translateY(10px) perspective(1000px);
+}
+
+#logo:nth-child(even):hover {
+  transform: translateX(25px) rotate(25deg) translateY(15px) perspective(1200px);
+}
+
 
 .home a{
   font-size: 20px;
@@ -68,7 +89,7 @@ body::-webkit-scrollbar{
 }
 
 
-.navbar a::after {
+#nav-link a::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -81,7 +102,7 @@ body::-webkit-scrollbar{
   transition: transform 0.25s ease-out;
 }
 
-.navbar a:hover::after {
+#nav-link a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
