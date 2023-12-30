@@ -8,7 +8,7 @@ body{
   margin: auto;
   width: 100%;
   position: relative;
-  background-color: #e5dbbc;
+  background-color: hsl(219, 48%, 18%);
 }
 
 body::-webkit-scrollbar{
@@ -17,7 +17,7 @@ body::-webkit-scrollbar{
 
 
 ::selection{
-  background-color: rgba(66, 65, 64, 0.342);
+  background-color: rgba(201, 193, 185, 0.342);
 }
 
 .navbar{
@@ -52,7 +52,7 @@ body::-webkit-scrollbar{
 }
 
 #logo a{
-  color: #e5dbbc;
+  color: #efece5;
   /* height: 40px; */
   /* background-color: #1bca08; */
   border-radius: 50px;
@@ -84,7 +84,7 @@ body::-webkit-scrollbar{
 }
 
 .navbar a{
-  color: rgb(50, 15, 15);
+  color: rgb(238, 236, 236);
   font-size: 20px;
   text-decoration: none;
   /* font-weight: 800; */
@@ -138,10 +138,11 @@ body::-webkit-scrollbar{
 
 #content h1 {
   font-size: 3rem;
-  color: #333;
+  color: #9a9494;
 }
 
 #des{
+  color: wheat;
   font-size: 20px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
