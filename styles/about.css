@@ -129,7 +129,7 @@ body{
 
 .typewriter h1 {
     /* border-right: 0.15em solid rgb(103, 72, 13); */
-    color: rgba(6, 164, 22, 0.578);
+    color: rgba(0, 9, 1, 0.997);
     margin: 300px 200px; /* Remove the left and right margin */
     letter-spacing: 0.15em; /* Adjust the spacing between letters */
     animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
