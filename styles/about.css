@@ -50,6 +50,7 @@ body{
 
 #logo:hover {
   transition: transform 0.2s ease-in-out 0.1s;
+  background-color: rgb(78, 68, 68);
 }
 
 #logo img{
@@ -126,6 +127,7 @@ body{
 #nav-link a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+  color: red;
 }
 
 .write{
