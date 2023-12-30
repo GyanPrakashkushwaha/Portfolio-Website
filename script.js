@@ -15,6 +15,27 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+
+document.addEventListener("DOMContentLoaded", function () {
+  var textElement = document.getElementById("typewriter-text");
+  var words = textElement.innerText.split(" ");
+  var coloredText = words.map(function (word, index) {
+    var color = getRandomColor();
+    return '<span style="color: ' + color + ';">' + word + '</span>';
+  }).join(" ");
+  textElement.innerHTML = coloredText;
+});
+
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+
 gsap.to(".navbar", {
     backgroundColor: "rgb(237, 47, 47)",
     duration: 0.5,

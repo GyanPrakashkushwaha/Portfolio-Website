@@ -28,31 +28,9 @@
 
       <div class="write">
         <div class="typewriter">
-            <h1 id="typewriter-text">I am Gyan Prakash Kushwaha Welcomem The typwriter cursor The typwriter cursor The typwriter cursorThe typwriter cursorThe typwriter cursorThe typwriter cursor.</h1>          </div>    
+            <h1 id="typewriter-text">I am Gyan Prakash Kushwaha Welcome. The typwriter cursor The typwriter cursor The typwriter cursorThe typwriter cursorThe typwriter cursorThe typwriter cursor.</h1>          </div>    
       </div>
 
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          var textElement = document.getElementById("typewriter-text");
-          var words = textElement.innerText.split(" ");
-          var coloredText = words.map(function (word, index) {
-            var color = getRandomColor();
-            return '<span style="color: ' + color + ';">' + word + '</span>';
-          }).join(" ");
-          textElement.innerHTML = coloredText;
-        });
-    
-        function getRandomColor() {
-          var letters = '0123456789ABCDEF';
-          var color = '#';
-          for (var i = 0; i < 6; i++) {
-            color += letters[Math.floor(Math.random() * 16)];
-          }
-          return color;
-        }
-      </script>
-
-      
 
       <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
