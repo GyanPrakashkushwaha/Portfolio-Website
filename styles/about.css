@@ -107,6 +107,39 @@ body{
   transform-origin: bottom left;
 }
 
+.write{
+    padding-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.typewriter h1 {
+    /* display: inline-block; */
+    font-family: "arial";
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    color: aquamarine;
+    animation: 
+      typing 9.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+  
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(23, 30, 246); }
+}
+  
 
 
 .about-video video{
@@ -114,5 +147,5 @@ body{
     width: 100%;
     object-fit: cover;
     z-index: -1;
-    /* position: fixed; */
+    position: fixed;
 }
