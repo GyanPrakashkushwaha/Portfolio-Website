@@ -21,19 +21,22 @@ body::-webkit-scrollbar{
 }
 
 .navbar{
+  position: fixed;
   display: flex;
-  height: 70px;
+  height: 15%;
   width: 100%;
-  padding: 0 10vw;
+  padding: 0 4vw;
   /* background-color: rgb(174, 174, 169); */
   justify-content: space-between;
   align-items: center;
+  z-index: 99;
 }
+
 #logo{
   border-radius: 50px;
   height: 70%;
   width: 25%;
-  background-color: #292c23;
+  background-color: #6c7675;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,10 +112,11 @@ body::-webkit-scrollbar{
 
 
 #content{
+  padding-top: 20vh;
   display: flex;
   height: 80vh;
   width: 100%;
-  padding: 0 10vw;
+  /* padding: 50vh 10vw; */
   justify-content: space-around;
   align-items: center;
 
@@ -120,6 +124,7 @@ body::-webkit-scrollbar{
 
 .content-text{
   width: 50%;
+  /* cursor: pointer; */
   /* height: 100px; */
 }
 
