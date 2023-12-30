@@ -16,24 +16,29 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  var textElement = document.getElementById("typewriter-text");
-  var words = textElement.innerText.split(" ");
-  var coloredText = words.map(function (word, index) {
-    var color = getRandomColor();
-    return '<span style="color: ' + color + ';">' + word + '</span>';
-  }).join(" ");
-  textElement.innerHTML = coloredText;
-});
+document.addEventListener('DOMContentLoaded', function() {
+  // Get the text element
+  var textElement = document.getElementById('typewriter-text');
+  // Get the text content
+  var textContent = textElement.innerHTML.trim();
+  // Clear the text content
+  textElement.innerHTML = '';
 
-function getRandomColor() {
-  var letters = '0123456789ABCDEF';
-  var color = '#';
-  for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
-}
+  // Split the text into characters
+  var characters = textContent.split('');
+
+  // Iterate through each character and append it to the text element with a delay
+  characters.forEach(function(char, index) {
+      // Create a span element for each character
+      var charElement = document.createElement('span');
+      charElement.innerHTML = char;
+
+      // Append the span element with a delay proportional to its index
+      setTimeout(function() {
+          textElement.appendChild(charElement);
+      }, 100 * index);
+  });
+});
 
 
 gsap.to(".navbar", {
