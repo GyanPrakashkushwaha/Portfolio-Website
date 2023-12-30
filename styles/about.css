@@ -16,7 +16,7 @@ body{
   background-color: rgba(66, 65, 64, 0.342);
 }
 
-.navbar{
+.navbar-about{
   position: fixed;
   display: flex;
   height: 10vh;
@@ -72,7 +72,7 @@ body{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.navbar ul{
+.navbar-about ul{
   display: flex;
   list-style: none;
   justify-content: space-between;
@@ -89,7 +89,7 @@ body{
     background-color: #2a3130;
 }
 
-.navbar a{
+.navbar-about a{
   color: rgb(254, 254, 254);
   font-size: 20px;
   text-decoration: none;
@@ -171,6 +171,8 @@ body{
     position: relative;
 }
 
+.skills-col3,
+.skills-col2,
 .skills-col1{
     position: relative;
     height: 70vh;
@@ -237,5 +239,14 @@ body{
 }
 
 .card:hover{
-  transform: translateY(2em) translateX(1em);
+  transform: translateY(2em) translateX(0.3em) scaleX(1.1) scaleY(1.1);
+}
+
+
+.skills-col2 .card:hover{
+  transform: scaleX(1.15) scaleY(1.17);
+}
+
+.skills-col3 .card:hover{
+  transform: translateY(-2em) translateX(0.3em) scaleX(1.1) scaleY(1.1);
 }

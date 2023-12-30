@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 gsap.to(".navbar", {
-    backgroundColor: "rgb(237, 47, 47)",
+    backgroundColor: "rgb(147, 204, 181,0.90)",
     duration: 0.5,
     height: "70px",
     scrollTrigger: {
@@ -54,6 +54,23 @@ gsap.to(".navbar", {
       scrub:0
     }
 });
+
+
+gsap.to(".navbar-about", {
+  backgroundColor: "rgb(237, 47, 47)",
+  backgroundColor: "rgb(147, 204, 181,0.50)",
+  duration: 0.5,
+  height: "70px",
+  scrollTrigger: {
+    trigger: ".navbar",
+    scroller: "body", // Note: Check if this should be a valid selector or use document.body
+    // markers: true,
+    start: "top -10%",
+    end: "top -11%",
+    scrub:0
+  }
+});
+
 
 // gsap.to("#main",{
 //   backgroundColor : "#000",
