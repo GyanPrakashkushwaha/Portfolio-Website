@@ -29,7 +29,7 @@ body{
 }
 
 #logo{
-  border-radius: 25%;
+  border-radius: 25px;
   height: 70%;
   width: 25%;
   background-color: #2a3130;
@@ -119,6 +119,7 @@ body{
 }
 
 .write{
+    position: relative;
     /* padding-top: 300px; */
     display: flex;
     text-align: center;
@@ -128,9 +129,10 @@ body{
 
 .typewriter h1 {
     /* border-right: 0.15em solid rgb(103, 72, 13); */
-    margin: 300px 400px; /* Remove the left and right margin */
+    margin: 300px 200px; /* Remove the left and right margin */
     letter-spacing: 0.15em; /* Adjust the spacing between letters */
     animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 @keyframes typing {
@@ -152,3 +154,28 @@ body{
 }
 
 
+.skills-section{
+    margin-top: 100px;
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+    position: relative;
+}
+
+.skills-col1{
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: green; */
+}
+
+
+.card{
+    position: relative;
+    border-radius: 60px;
+    height: 70%;
+    width: 30%;
+    background-color: black;
+}
