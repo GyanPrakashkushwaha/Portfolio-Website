@@ -267,6 +267,8 @@ body::-webkit-scrollbar{
   }
 }
 
+
+
 #info {
   display: flex;
   height: 60vh;
