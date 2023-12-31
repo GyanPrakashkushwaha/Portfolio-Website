@@ -213,7 +213,7 @@ body{
     position: relative;
     border-radius: 50px;
     width: 1000px;
-    height: 400px;
+    height: 420px;
     z-index: 1;
     transition: all ease 0.6s;
 }
