@@ -162,21 +162,21 @@ body{
 }
 
 
-/* .about-video video{
+.about-video video{
     height: 100%;
     width: 100%;
     object-fit: cover;
     z-index: -1;
     position: fixed;
-} */
-
+}
+/* 
 .about-video img{
   height: 100%;
   width: 100%;
   object-fit: cover;
   z-index: -1;
   position: fixed;
-}
+} */
 
 
 .skills-section{
