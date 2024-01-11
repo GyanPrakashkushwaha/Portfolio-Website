@@ -161,147 +161,131 @@ body{
     }
 }
 
-.about-video video{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    z-index: -1;
-    position: fixed;
-}
-/* 
-.about-video img{
-  height: 100%;
+.wrap-skills{
+  /* padding-top: 100px; */
+  height: 70vh;
   width: 100%;
-  object-fit: cover;
-  z-index: -1;
-  position: fixed;
-} */
-
-
-.skills-tag {
-  padding: 3rem;
-  position: relative;
-  /* padding: 2rem; */
+  display: flex;
   align-items: center;
-  display: flex;
+  gap: 250px;
   justify-content: center;
-  height: 3rem;
-  width: 100%;
-  /* background: linear-gradient(to right, rgb(48, 29, 214), #1cd10f); */
-  border-radius: 1rem;
-  border-color: #082805;
 }
 
-.skills-background{
-  border-radius: 20px;
-  display: flex;
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 100px;
+  gap: 20px;
+  position: relative;
   justify-content: center;
   align-items: center;
-  position: relative;
-  height: 4rem;
-  width: 20%;
-  background: linear-gradient(to right, rgb(48, 29, 214), #1cd10f);
+  transition: 1s;
 }
 
-/* .skills-tag img{
-  border-radius: 20px;
-  height: 60px;
-  width: 500px;
-} */
-
-
-.skills-tag h4{
-  font-size: 23px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  padding: 1rem;
-  /* background-color: red; */
+.each {
+  background: #24d04c;
+  box-shadow: inset 0 0 5px rgba(55, 84, 170, 0),
+    inset 0 0 10px rgba(255, 255, 255, 0), 5px 5px 9px rgba(55, 84, 170, 0.15),
+    -5px -5px 11px white, inset 0px 0px 2px rgba(255, 255, 255, 0.2);
+  transition: box-shadow 0.2s ease-in-out;
+  height: 190px;
+  width: 190px;
+  border-radius: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 5px solid #eaeef5;
 }
 
-
-.skills-section{
-    margin-top: 10px;
-    width: 100%;
-    height: 100vh;
-    /* background-color: red; */
-    position: relative;
+.skills:hover .each {
+  box-shadow: inset 4px 4px 7px rgba(55, 84, 170, 0.15),
+    inset -4px -4px 10px white, 0px 0px 2px rgba(255, 255, 255, 0.2);
+  transition: box-shadow 0.2s ease-in-out;
 }
 
-.skills-col3,
-.skills-col2,
-.skills-col1{
-    position: relative;
-    height: 70vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    background-color: rgba(21, 165, 129, 0.651);
+.each .box {
+  padding: 16px;
 }
 
-
-#skills-col-card1 img,
-#skills-col-card2 img,
-#skills-col-card3 img {
-  position: absolute;
-  border-radius: 60px;
-  height: 100%;
-  max-width: 100%;
-  object-fit: cover; /* Ensure images cover the entire container */
-  z-index: 1;
+.css .box {
+  text-align: left;
 }
 
-.card-text1 h2{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 40px;
-  padding: 10px;
-  position: relative;
-  height: 100%;
-  width: 100%;
-  /* padding: 30px; */
-  color: rgb(61, 201, 37);
-  text-align: center; /* Center the text */
-  z-index: 2;
+.js .box {
+  margin-top: 40px;
 }
 
-.card {
-  position: relative;
-  border-radius: 60px;
-  height: 70%;
-  width: 30%;
-  /* background-color: black; */
-  overflow: hidden; /* Ensure content doesn't overflow */
-  transition: all ease 0.6s;
+.ng .box {
+  margin-top: 40px;
+  text-align: right;
 }
 
 
-
-.card-text1 p,
-.card-text p{
-  padding: 20px;
+.each .box .content h2 {
   font-size: 20px;
-  position: relative;
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.each .box .content p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.html .box .content i {
+  margin-top: 40px;
+}
+
+.box .content h2 {
+  /* margin-top: 40px;
+   */
+   color: rgb(241, 223, 223);
+}
+
+.box .content p {
+  /* margin-top: 40px;
+   */
+   color: rgb(167, 46, 46);
+}
+
+.css .box .content i {
+  font-size: 30px;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+
+.js .box .content i {
+  margin-bottom: 20px;
+}
+
+.ng .box .content i {
+  margin-bottom: 20px;
+}
+
+.each .box .content i {
+  font-size: 30px;
+}
+
+.center {
+  position: absolute;
+  height: 160px;
+  width: 160px;
+  background: #1C2944;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border-radius: 108px;
+  box-shadow: inset 0 0 5px rgba(55, 84, 170, 0),
+    inset 0 0 10px rgba(255, 255, 255, 0), 5px 5px 9px rgba(55, 84, 170, 0.15),
+    -5px -5px 11px white, inset 0px 0px 2px rgba(255, 255, 255, 0.2);
+  transition: box-shadow 0.2s ease-in-out;
+  border: 10px solid #e8edf5;
+}
+
+.center .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
-  width: 100%;
-  color: #c8e3df;
-  z-index: 2;
-  opacity: 0;
-  transition: all ease 0.6s;
-  background-color: #23871a67;
-
-}
-
-.card:hover p{
-  opacity: 1;
-}
-
-.card:hover{
-  transform: translateY(2em) translateX(0.3em) scaleX(1.1) scaleY(1.1);
-}
-
-
-.skills-col2 .card:hover{
-  transform: scaleX(1.15) scaleY(1.17);
-}
-
-.skills-col3 .card:hover{
-  transform: translateY(-2em) translateX(0.3em) scaleX(1.1) scaleY(1.1);
+  font-family: Arial, Helvetica, sans-serif;
 }

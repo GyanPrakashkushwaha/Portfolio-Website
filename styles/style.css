@@ -8,7 +8,7 @@ body{
   margin: auto;
   width: 100%;
   position: relative;
-  background-color: hsl(219, 48%, 18%);
+  background-color: #12203cf4;
 }
 
 body::-webkit-scrollbar{
@@ -106,7 +106,7 @@ body::-webkit-scrollbar{
 #content{
   padding-top: 20vh;
   display: flex;
-  height: 80vh;
+  height: 70vh;
   width: 100%;
   /* padding: 50vh 10vw; */
   justify-content: space-around;
@@ -172,7 +172,7 @@ body::-webkit-scrollbar{
 #about-me{
   margin-top: 30px;
   display: flex;
-  height: 90vh;
+  height: 80vh;
   width: 100%;
   justify-content: center;
 }
@@ -234,7 +234,7 @@ body::-webkit-scrollbar{
 
 
 #scroller-in {
-  margin: 0 300px;
+  margin: 0 30px;
   display: inline-block;
   white-space: nowrap;
   animation-name: scroll;
@@ -267,32 +267,15 @@ body::-webkit-scrollbar{
   }
 }
 
+#info{
+  height: 70vh;
+  width: 100%;
+  padding: 0 2rem;
+}
 
-
-#info {
-  display: flex;
-  height: 60vh;
-  width: 90%;
-  margin: 90px 60px;
-  gap: 60px;
-  align-items: center;
-  background-color: #3112af46; /* Light gray background */
-  padding: 20px; /* Add padding for better spacing */
+#info video {
+  position: relative;
   border-radius: 30px;
-}
-
-#info video{
-  border-radius: 30px;
-  height: 400px;
-}
-
-#text{
-  gap: 30px;  
-  align-items: center;
-}
-
-#text p{
-  white-space: normal;
-  font-size: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 4vw;
+  width: 100%;
 }
