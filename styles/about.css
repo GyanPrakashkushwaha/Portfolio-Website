@@ -1,8 +1,27 @@
+@font-face {
+  font-family: neu;
+  src: url(./fonts/NeueHaasDisplayMediu.ttf);
+}
+
+@font-face {
+  font-family: neu;
+  font-weight: 100;
+  src: url(./fonts/NeueHaasDisplayLight.ttf);
+}
+
+@font-face {
+  font-family: neu;
+  font-weight: 200;
+  src: url(./fonts/NeueHaasDisplayRoman.ttf);
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: neu;
 }
+
 
 body{
   margin: auto;
@@ -53,10 +72,12 @@ body{
   background-color: rgb(78, 68, 68);
 }
 
+
 #logo img{
   height: 40px;
   object-fit: cover;
 }
+
 
 #logo a{
   color: #e5dbbc;
@@ -67,6 +88,7 @@ body{
   font-weight: 800;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 
 #logo:nth-child(odd):hover {
   transform: translateX(15px) rotate(15deg) translateY(10px) perspective(1000px);
@@ -130,162 +152,70 @@ body{
   color: red;
 }
 
-.write{
-    position: relative;
-    /* padding-top: 300px; */
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
 
-.typewriter{
-  height: 90vh;
+.skills-wrapper{
+  height: 100vh;
   width: 100%;
-}
-
-.typewriter h1 {
-    /* border-right: 0.15em solid rgb(103, 72, 13); */
-    color: rgba(0, 9, 1, 0.997);
-    margin: 300px 200px; /* Remove the left and right margin */
-    letter-spacing: 0.15em; /* Adjust the spacing between letters */
-    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: auto;
-    }
-}
-
-.wrap-skills{
-  /* padding-top: 100px; */
-  height: 70vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 250px;
-  justify-content: center;
-}
-
-
-.skills {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  width: 100px;
-  gap: 20px;
+  background-color: #14db46;
+  padding: 6rem 2rem;
   position: relative;
-  justify-content: center;
-  align-items: center;
-  transition: 1s;
 }
 
-.each {
-  background: #24d04c;
+.skills-container{
+  position: relative;
+  height: 70%;
+  width: 100%;
+  /* background-color: rgb(124, 231, 17); */
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+.card1,
+.card2{
+  /* height: 60%; */
+  width: 25%;
+  height: 300px;
+  border-radius: 80px;
+  /* opacity: 0.8; */
+  background-image: url("../assets/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-genera.avif");
+  background-size: cover;
   box-shadow: inset 0 0 5px rgba(55, 84, 170, 0),
     inset 0 0 10px rgba(255, 255, 255, 0), 5px 5px 9px rgba(55, 84, 170, 0.15),
     -5px -5px 11px white, inset 0px 0px 2px rgba(255, 255, 255, 0.2);
-  transition: box-shadow 0.2s ease-in-out;
-  height: 190px;
-  width: 190px;
-  border-radius: 30px;
-  font-family: Arial, Helvetica, sans-serif;
+    transition: box-shadow 0.2s ease-in-out;
   border: 5px solid #eaeef5;
 }
 
-.skills:hover .each {
-  box-shadow: inset 4px 4px 7px rgba(55, 84, 170, 0.15),
-    inset -4px -4px 10px white, 0px 0px 2px rgba(255, 255, 255, 0.2);
-  transition: box-shadow 0.2s ease-in-out;
-}
-
-.each .box {
-  padding: 16px;
-}
-
-.css .box {
-  text-align: left;
-}
-
-.js .box {
-  margin-top: 40px;
-}
-
-.ng .box {
-  margin-top: 40px;
-  text-align: right;
+.card1:hover {
+  box-shadow: inset 0 0 5px rgba(55, 84, 170, 0.5),
+    inset 0 0 10px rgba(255, 255, 255, 0.3),
+    5px 5px 9px rgba(55, 84, 170, 0.4),
+    -5px -5px 11px white, inset 0px 0px 5px rgba(255, 255, 255, 0.5);
 }
 
 
-.each .box .content h2 {
+.card-text i{
+  font-size: 80px;
+  color: rgb(197, 236, 197);
+}
+
+.card-text h2{
+  padding: 10px;
+  font-size: 30px;
+  color: rgb(161, 150, 212);
+}
+
+.card-text p{
   font-size: 20px;
-  margin-top: 0;
-  margin-bottom: 6px;
+  color: rgb(63, 235, 33);
 }
 
-.each .box .content p {
-  font-size: 12px;
-  margin: 0;
+
+.card-text{
+  position: relative;
+  padding: 30px;
 }
 
-.html .box .content i {
-  margin-top: 40px;
-}
-
-.box .content h2 {
-  /* margin-top: 40px;
-   */
-   color: rgb(241, 223, 223);
-}
-
-.box .content p {
-  /* margin-top: 40px;
-   */
-   color: rgb(167, 46, 46);
-}
-
-.css .box .content i {
-  font-size: 30px;
-  margin-left: 100px;
-  margin-top: 40px;
-}
-
-.js .box .content i {
-  margin-bottom: 20px;
-}
-
-.ng .box .content i {
-  margin-bottom: 20px;
-}
-
-.each .box .content i {
-  font-size: 30px;
-}
-
-.center {
-  position: absolute;
-  height: 160px;
-  width: 160px;
-  background: #1C2944;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  border-radius: 108px;
-  box-shadow: inset 0 0 5px rgba(55, 84, 170, 0),
-    inset 0 0 10px rgba(255, 255, 255, 0), 5px 5px 9px rgba(55, 84, 170, 0.15),
-    -5px -5px 11px white, inset 0px 0px 2px rgba(255, 255, 255, 0.2);
-  transition: box-shadow 0.2s ease-in-out;
-  border: 10px solid #e8edf5;
-}
-
-.center .box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  font-family: Arial, Helvetica, sans-serif;
-}
